@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Mar 17, 2019 7:14:31 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.voidmain.pojo.Machinary" table="MACHINARY">
+        <id name="machanaryId" type="int" access="field">
+            <column name="MACHANARYID" />
+            <generator class="increment" />
+        </id>
+        <property name="name" type="java.lang.String" access="field">
+            <column name="NAME" />
+        </property>
+        <property name="owner" type="java.lang.String" access="field">
+            <column name="OWNER" />
+        </property>
+        <property name="leaseAmountPerHour" type="float" access="field">
+            <column name="LEASEAMOUNTPERHOUR" />
+        </property>
+        <property name="isDriverSuppiled" type="java.lang.String" access="field">
+            <column name="ISDRIVERSUPPILED" />
+        </property>
+        <property name="address" type="java.lang.String" access="field">
+            <column name="ADDRESS" />
+        </property>
+        <property name="mobileNumber" type="java.lang.String" access="field">
+            <column name="MOBILENUMBER" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+                                         "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+ <session-factory name="">
+  <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+  <property name="hibernate.connection.password">root</property>
+  <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/upliftingtheformer</property>
+  <property name="hibernate.connection.username">root</property>
+  <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+  <property name="hibernate.hbm2ddl.auto">update</property>
+  <property name="show_sql">true</property>
+  <mapping class="com.voidmain.pojo.CropSale" resource="com/voidmain/pojo/CropSale.hbm.xml"/>
+  <mapping class="com.voidmain.pojo.Fertilizer" resource="com/voidmain/pojo/Fertilizer.hbm.xml"/>
+  <mapping class="com.voidmain.pojo.LandRental" resource="com/voidmain/pojo/LandRental.hbm.xml"/>
+  <mapping class="com.voidmain.pojo.Loans" resource="com/voidmain/pojo/Loans.hbm.xml"/>
+  <mapping class="com.voidmain.pojo.Machinary" resource="com/voidmain/pojo/Machinary.hbm.xml"/>
+  <mapping class="com.voidmain.pojo.Market" resource="com/voidmain/pojo/Market.hbm.xml"/>
+  <mapping class="com.voidmain.pojo.MarketCrops" resource="com/voidmain/pojo/MarketCrops.hbm.xml"/>
+  <mapping class="com.voidmain.pojo.User" resource="com/voidmain/pojo/User.hbm.xml"/>
+ </session-factory>
+</hibernate-configuration>

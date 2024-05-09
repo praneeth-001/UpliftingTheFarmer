@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Mar 17, 2019 7:14:31 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.voidmain.pojo.Loans" table="LOANS">
+        <id name="loanId" type="int" access="field">
+            <column name="LOANID" />
+            <generator class="increment" />
+        </id>
+        <property name="name" type="java.lang.String" access="field">
+            <column name="NAME" />
+        </property>
+        <property name="surity" type="java.lang.String" access="field">
+            <column name="SURITY" />
+        </property>
+        <property name="ammount" type="float" access="field">
+            <column name="AMMOUNT" />
+        </property>
+        <property name="interest" type="float" access="field">
+            <column name="INTEREST" />
+        </property>
+    </class>
+</hibernate-mapping>
